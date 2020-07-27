@@ -36,4 +36,4 @@ y = h - imagelines[0].height
 for imageline in imagelines:
     output.paste(imageline, (0, y))
     y += imageline.height + padding_bottom
-output.save(sys.argv[3] if len(sys.argv) > 3 else 'output.jpg')
+output.save(sys.argv[3] if len(sys.argv) > 3 else 'output.jpg', im.format)
